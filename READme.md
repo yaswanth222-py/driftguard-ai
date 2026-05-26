@@ -93,3 +93,5 @@ uvicorn api.main:app --reload
 ```bash
 docker compose -f docker/docker-compose.yml up --build
 ```
+
+Production-grade MLOps platform with FastAPI and MLflow.
