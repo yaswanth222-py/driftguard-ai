@@ -130,7 +130,9 @@ if st.button("🚨 Predict Fraud"):
              "https://driftguard-api-kbos.onrender.com/predict",
              json={
                 "features": input_features
-            }
+            },
+            timeout = 30
+
         )
         
         result = response.json()
@@ -153,8 +155,9 @@ if st.button("🚨 Predict Fraud"):
 
     except Exception as e:
         st.error(
-            f"❌ Error: {str(e)}"
-    )
+            "⚠️ Backend is waking up or temporarily unavailable. Please wait a few seconds and try again."
+        )
+        st.write("Error:", str(e))
 
 st.markdown("</div>", unsafe_allow_html=True)
 
