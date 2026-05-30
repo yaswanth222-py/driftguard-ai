@@ -84,21 +84,22 @@ def predict(data: FraudInput):
     # -----------------------------
     # DATABASE LOGGING
     # -----------------------------
+    try:
+        db = SessionLocal()
+        log = PredictionLog(
+            prediction=int(prediction),
+            confidence=float(probability),
+            status=status
+        )
+            
+        db.add(log)
 
-    db = SessionLocal()
+        db.commit()
+        
+        db.close()
 
-    log = PredictionLog(
-        prediction=int(prediction),
-        confidence=float(probability),
-        status=status
-    )
-
-    db.add(log)
-
-    db.commit()
-
-    db.close()
-
+    except Exception as e:
+        print("Database logging error:", e)
     # -----------------------------
     # API RESPONSE
     # -----------------------------
