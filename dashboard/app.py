@@ -127,7 +127,7 @@ if st.button("🚨 Predict Fraud"):
     try:
 
         response = requests.post(
-            "https://driftguard-api-kbos.onrender.com,
+            "https://driftguard-api-kbos.onrender.com/predict",
             json={
                 "features": input_features
             }
