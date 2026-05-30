@@ -127,12 +127,14 @@ if st.button("🚨 Predict Fraud"):
     try:
 
         response = requests.post(
-            "https://driftguard-api-kbos.onrender.com/predict",
-            json={
+             "https://driftguard-api-kbos.onrender.com/predict",
+             json={
                 "features": input_features
             }
         )
-
+        st.write("Status Code:", response.status_code)
+        st.write("Response Text:", response.text)
+        
         result = response.json()
 
         prediction = result["prediction"]
