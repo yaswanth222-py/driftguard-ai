@@ -1,8 +1,15 @@
-# 🛡️ DriftGuard AI
+# DriftGuard AI
 
-Enterprise Fraud Detection & MLOps Monitoring Platform
+Enterprise Fraud Detection & Drift Monitoring Platform
 
----
+🔗 Live Demo: https://driftguard-ai.onrender.com
+
+## Live Deployment
+
+| Service | URL |
+|----------|-----|
+| Frontend Dashboard | https://driftguard-ai.onrender.com |
+| Backend API | https://driftguard-api-kbos.onrender.com |
 
 ## 🚀 Overview
 
