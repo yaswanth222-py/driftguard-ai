@@ -132,8 +132,6 @@ if st.button("🚨 Predict Fraud"):
                 "features": input_features
             }
         )
-        st.write("Status Code:", response.status_code)
-        st.write("Response Text:", response.text)
         
         result = response.json()
 
