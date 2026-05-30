@@ -151,11 +151,10 @@ if st.button("🚨 Predict Fraud"):
                 f"✅ Legitimate Transaction | Confidence: {confidence:.2f}"
             )
 
-    except:
-
+    except Exception as e:
         st.error(
-            "❌ Backend API is not running."
-        )
+            f"❌ Error: {str(e)}"
+    )
 
 st.markdown("</div>", unsafe_allow_html=True)
 
