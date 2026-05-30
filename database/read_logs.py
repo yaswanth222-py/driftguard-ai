@@ -7,14 +7,26 @@ engine = create_engine(DATABASE_URL)
 
 def fetch_prediction_logs():
 
-    query = """
-    SELECT * FROM prediction_logs
-    ORDER BY id DESC
-    """
+    try:
 
-    df = pd.read_sql(
-        query,
-        engine
-    )
+        query = """
+        SELECT * FROM prediction_logs
+        ORDER BY id DESC
+        """
 
-    return df
+        df = pd.read_sql(
+            query,
+            engine
+        )
+
+        return df
+
+    except Exception:
+
+        return pd.DataFrame(
+            {
+                "Message": [
+                    "No prediction history available yet"
+                ]
+            }
+        )
