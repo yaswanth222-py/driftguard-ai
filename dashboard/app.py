@@ -1,8 +1,19 @@
+import sys
+import os
+
+sys.path.append(
+    os.path.dirname(
+        os.path.dirname(
+            os.path.abspath(__file__)
+        )
+    )
+)
 
 import streamlit as st
 import pandas as pd
 import requests
 from database.read_logs import fetch_prediction_logs
+from PIL import Image
 
 st.set_page_config(
     page_title="DriftGuard AI",
