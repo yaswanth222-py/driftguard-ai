@@ -324,5 +324,5 @@ st.success("✅ CI/CD Pipeline Healthy")
 st.markdown("---")
 
 st.caption(
-    "DriftGuard AI • Enterprise Fraud Monitoring Platform"
+    "DriftGuard AI • Developed by Yaswanth • Enterprise Fraud Monitoring Platform"
 )

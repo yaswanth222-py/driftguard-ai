@@ -260,3 +260,30 @@ Developed as an enterprise-style AI fraud monitoring platform project.
 # ⭐ DriftGuard AI
 
 Enterprise AI • Fraud Detection • MLOps • Monitoring • Explainability
+
+---
+
+## Author
+
+**Yaswanth**
+GitHub: https://github.com/yaswanth222-py
+
+DriftGuard AI is an end-to-end MLOps fraud detection platform developed using:
+
+- FastAPI
+- Streamlit
+- Scikit-Learn
+- SQLAlchemy
+- Docker
+- MLflow
+
+### Key Features
+
+- Real-time fraud prediction
+- Interactive analytics dashboard
+- Explainable AI (SHAP)
+- Drift monitoring
+- Database logging
+- Cloud deployment on Render
+
+Developed and maintained by Yaswanth as a portfolio-grade MLOps project.
