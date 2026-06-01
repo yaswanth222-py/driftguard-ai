@@ -11,6 +11,8 @@ from database.models import PredictionLog
 
 Base.metadata.create_all(bind=engine)
 print("Database tables created")
+print("Engine URL:", engine.url)
+print("Tables:", Base.metadata.tables.keys())
 
 app = FastAPI(
     title="DriftGuard AI Fraud API"
