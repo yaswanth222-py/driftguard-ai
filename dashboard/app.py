@@ -12,7 +12,6 @@ sys.path.append(
 import streamlit as st
 import pandas as pd
 import requests
-from database.read_logs import fetch_prediction_logs
 from PIL import Image
 
 st.set_page_config(
@@ -250,12 +249,27 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-logs_df = fetch_prediction_logs()
+try:
 
-st.dataframe(
-    logs_df,
-    use_container_width=False
-)
+    response = requests.get(
+        "https://driftguard-api-kbos.onrender.com/logs"
+    )
+
+    logs_data = response.json()
+
+    logs_df = pd.DataFrame(logs_data)
+
+    st.dataframe(
+        logs_df,
+        use_container_width=True
+    )
+
+except Exception as e:
+
+    st.error(
+        f"Unable to fetch prediction history: {e}"
+    )
+
 
 st.markdown("---")
 
