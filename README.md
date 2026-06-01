@@ -1,6 +1,10 @@
 # DriftGuard AI
 
 Enterprise Fraud Detection & Drift Monitoring Platform
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
+![Render](https://img.shields.io/badge/Deployed-Render-purple)
 
 🔗 Live Demo: https://driftguard-ai.onrender.com
 
@@ -29,6 +33,20 @@ The platform combines:
 The goal of the project is to demonstrate production-style AI system engineering beyond simple notebook-based machine learning projects.
 
 ---
+
+# 📸 Dashboard Preview
+
+## Dashboard
+
+![Dashboard](screenshots/dashboard_home.png)
+
+## Prediction History
+
+![Prediction History](screenshots/prediction_history.png)
+
+## Drift Monitoring
+
+![Drift Monitoring](screenshots/drift_monitoring.png)
 
 # ✨ Features
 
@@ -65,6 +83,19 @@ The goal of the project is to demonstrate production-style AI system engineering
 ## ✅ MLflow Tracking
 - Experiment tracking
 - Model lifecycle monitoring
+
+---
+
+# 📌 Resume Highlights
+
+- Built and deployed a full-stack fraud detection platform using FastAPI and Streamlit.
+- Developed REST APIs for real-time machine learning predictions.
+- Implemented prediction logging with SQLite and SQLAlchemy.
+- Created an interactive analytics dashboard for monitoring fraud activity.
+- Integrated SHAP-based explainable AI for model transparency.
+- Built data drift monitoring pipelines for model reliability tracking.
+- Deployed frontend and backend services independently on Render.
+- Implemented end-to-end API communication between frontend and backend systems.
 
 ---
 
