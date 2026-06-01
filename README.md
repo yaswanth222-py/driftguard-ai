@@ -290,7 +290,9 @@ DriftGuard AI is an end-to-end MLOps fraud detection platform developed using:
 - Interactive analytics dashboard
 - Explainable AI (SHAP)
 - Drift monitoring
-- Database logging
+- FastAPI Backend
+- SQLite Logging
+- Prediction History
 - Cloud deployment on Render
 
 Developed and maintained by Yaswanth as a portfolio-grade MLOps project.
