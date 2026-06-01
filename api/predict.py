@@ -3,13 +3,14 @@ from pydantic import BaseModel
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import make_classification
+from database.db_config import engine
+from database.models import Base
 
 from database.db_config import SessionLocal
 from database.models import PredictionLog
 
-# -----------------------------
-# CREATE FASTAPI APP
-# -----------------------------
+Base.metadata.create_all(bind=engine)
+print("Database tables created")
 
 app = FastAPI(
     title="DriftGuard AI Fraud API"
