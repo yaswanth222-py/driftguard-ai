@@ -289,11 +289,6 @@ This project was built to demonstrate:
 
 ---
 
-# 👨‍💻 Author
-
-Developed as an enterprise-style AI fraud monitoring platform project.
-
----
 
 # ⭐ DriftGuard AI
 
@@ -301,7 +296,7 @@ Enterprise AI • Fraud Detection • MLOps • Monitoring • Explainability
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 **Yaswanth**
 GitHub: https://github.com/yaswanth222-py
