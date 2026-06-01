@@ -36,17 +36,11 @@ The goal of the project is to demonstrate production-style AI system engineering
 
 # 📸 Dashboard Preview
 
-## Dashboard
+![Dashboard](screenshots/dashboard_home.png.png)
 
-![Dashboard](screenshots/dashboard_home.png)
+![Prediction History](screenshots/prediction_history.png.png)
 
-## Prediction History
-
-![Prediction History](screenshots/prediction_history.png)
-
-## Drift Monitoring
-
-![Drift Monitoring](screenshots/drift_monitoring.png)
+![Drift Monitoring](screenshots/drift_monitoring.png.png)
 
 # ✨ Features
 
