@@ -94,10 +94,11 @@ def predict(data: FraudInput):
             confidence=float(probability),
             status=status
         )
-            
+        print("Logging prediction...")
         db.add(log)
 
         db.commit()
+        print("Prediction saved successfully")
         
         db.close()
 
